@@ -1,0 +1,28 @@
+﻿<Window x:Class="GameShop.GamesOptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameShop"
+        mc:Ignorable="d"
+        Title="GamesOptionsWindow" Height="207.242" Width="349">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="GameNumber:" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"><Run Text="Title"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Stock:"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Price:"/>
+        <Button x:Name="btnShowGames" Content="Show games" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="102" Click="btnShowGames_Click" TabIndex="6"/>
+        <Button x:Name="btnCreateNewGame" Content="Create game" HorizontalAlignment="Left" Margin="229,146,0,0" VerticalAlignment="Top" Width="102" Click="btnCreateNewGame_Click" TabIndex="9"/>
+        <Button x:Name="btnPreviousGame" Content="&lt;" HorizontalAlignment="Left" Margin="117,146,0,0" VerticalAlignment="Top" Width="51" Click="btnPreviousGame_Click" TabIndex="7"/>
+        <Button x:Name="btnNextGame" Content="&gt;" HorizontalAlignment="Left" Margin="173,146,0,0" VerticalAlignment="Top" Width="51" Click="btnNextGame_Click" TabIndex="8"/>
+        <Button x:Name="btnClearGame" Content="Clear" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="102" Click="btnClearGame_Click" TabIndex="3"/>
+        <TextBox x:Name="txtGameId" HorizontalAlignment="Left" Height="23" Margin="135,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" IsReadOnly="True" Background="#FF9B9B9B"/>
+        <TextBox x:Name="txtGameTitle" HorizontalAlignment="Left" Height="23" Margin="135,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" TabIndex="0"/>
+        <TextBox x:Name="txtGameStock" HorizontalAlignment="Left" Height="23" Margin="135,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" TabIndex="1"/>
+        <TextBox x:Name="txtGamePrice" HorizontalAlignment="Left" Height="23" Margin="135,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" TabIndex="2"/>
+        <Button x:Name="btnAddToStock" Content="Add units to game" HorizontalAlignment="Left" Margin="117,121,0,0" VerticalAlignment="Top" Width="107" Click="btnAddToStock_Click" TabIndex="4"/>
+        <TextBox x:Name="txtAddToStock" HorizontalAlignment="Left" Height="20" Margin="266,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65" TabIndex="5"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="229,123,0,0" TextWrapping="Wrap" Text="Units:" VerticalAlignment="Top" Width="32"/>
+
+    </Grid>
+</Window>
